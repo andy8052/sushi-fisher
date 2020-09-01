@@ -4,11 +4,11 @@ import "ds-test/test.sol";
 
 import "./SushiFarmer.sol";
 
-contract SushiFarmerTest is DSTest {
-    SushiFarmer farmer;
+contract SushiFisherTest is DSTest {
+    SushiFisher fisher;
 
     function setUp() public {
-        farmer = new SushiFarmer();
+        fisher = new SushiFisher(address(0), 0);
     }
 
     function testFail_basic_sanity() public {
